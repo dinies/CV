@@ -49,6 +49,9 @@ RUN if [ "$dev_enabled" = "true" ]; then \
     echo "wssource() {" >> /home/$USERNAME/.bashrc && \
     echo "  source \$1/devel/setup.bash" >> /home/$USERNAME/.bashrc && \
     echo "}" >> /home/$USERNAME/.bashrc &&\
+    git config --global user.name "$git_name" && \
+    git config --global user.email "$git_email" && \
+    git config --global push.default simple && \
     git clone git@github.com:dinies/dotfiles.git && \
     ./dotfiles/set_up.sh &&\
     clang-format -style=google -dump-config > .clang-format ;\
