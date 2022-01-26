@@ -1,7 +1,12 @@
 #!/bin/bash
-CONTAINER_NAME=curriculum_0_1
-DOCKER_IMAGE_NAME="curriculum_img_0_1"
+CONTAINER_NAME=curriculum_2_0
+DOCKER_IMAGE_NAME="curriculum_img_2_0"
 USERNAME="user"
+
+DEV_ENABLED="true"
+SSH_KEY_NAME="id_ed25519"
+
+
 
 setfacl -m user:1000:r ${HOME}/.Xauthority
 dpkg -l | grep nvidia-container-toolkit &> /dev/null
@@ -24,10 +29,24 @@ else
   DOCKER_COMMAND="docker run"
 fi
 
+if [[ $DEV_ENABLED == "true" ]]; then
 docker build -t $DOCKER_IMAGE_NAME \
   --build-arg username=$USERNAME \
   --build-arg base_img=$DOCKER_BASE_IMAGE \
+  --build-arg dev_enabled=$DEV_ENABLED \
+  --build-arg git_email="$(git config user.email)" \
+  --build-arg git_name="$(git config user.name)" \
+  --build-arg ssh_file_name=$SSH_KEY_NAME \
+  --build-arg ssh_prv_key="$(cat ~/.ssh/$SSH_KEY_NAME)" \
+  --build-arg ssh_pub_key="$(cat ~/.ssh/$SSH_KEY_NAME.pub)" \
+  --squash  .
+else
+docker build -t $DOCKER_IMAGE_NAME \
+  --build-arg username=$USERNAME \
+  --build-arg base_img=$DOCKER_BASE_IMAGE \
+  --build-arg dev_enabled=$DEV_ENABLED \
   .
+fi
 
 exec $DOCKER_COMMAND \
      -it \
