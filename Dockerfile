@@ -20,6 +20,7 @@ RUN apt-get install -y \
   sudo \
   keyboard-configuration\
   openssh-server \
+  make \
   texlive-full
 
 
