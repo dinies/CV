@@ -44,12 +44,6 @@ RUN if [ "$dev_enabled" = "true" ]; then \
     sudo chmod 600 $ssh_dir_path/$ssh_file_name && \
     sudo chmod 600 $ssh_dir_path/$ssh_file_name.pub && \
     sudo apt-get install -y  git vim locate gdb silversearcher-ag tree tmux clang-format && \
-    echo "alias cm='catkin_make'" >> /home/$USERNAME/.bashrc && \
-    echo "alias cmtb='catkin_make tests'" >> /home/$USERNAME/.bashrc && \
-    echo "alias cmt='catkin_make test'" >> /home/$USERNAME/.bashrc && \
-    echo "wssource() {" >> /home/$USERNAME/.bashrc && \
-    echo "  source \$1/devel/setup.bash" >> /home/$USERNAME/.bashrc && \
-    echo "}" >> /home/$USERNAME/.bashrc &&\
     git config --global user.name "$git_name" && \
     git config --global user.email "$git_email" && \
     git config --global push.default simple && \

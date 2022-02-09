@@ -1,12 +1,18 @@
 #!/bin/bash
-CONTAINER_NAME=curriculum_2_0
-DOCKER_IMAGE_NAME="curriculum_img_2_0"
+NAME="curriculum"
+MAJOR_VERSION_NUM=2
+MINOR_VERSION_NUM=1
+
 USERNAME="user"
 
 DEV_ENABLED="true"
 SSH_KEY_NAME="id_ed25519"
 
 
+
+
+CONTAINER_NAME="${NAME}_${MAJOR_VERSION_NUM}_${MINOR_VERSION_NUM}"
+DOCKER_IMAGE_NAME="${NAME}_img_${MAJOR_VERSION_NUM}_${MINOR_VERSION_NUM}"
 
 setfacl -m user:1000:r ${HOME}/.Xauthority
 dpkg -l | grep nvidia-container-toolkit &> /dev/null
