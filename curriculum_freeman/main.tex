@@ -45,34 +45,32 @@
 %	YOUR NAME AND CURRICULUM VITAE TITLE
 %----------------------------------------------------------------------------------------
 
-\parbox[][0.11\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
+\parbox[][0.09\textheight][c]{\linewidth}{ % Box to hold your name and CV title; change the fixed height as needed to match the colored box to the right
 	\centering % Horizontally center text
 	
 	{\sffamily\Huge Dr. Edoardo Ghini} % Your name
 	
 	\medskip % Vertical whitespace
 	
-	{\cursivefont\Huge\textcolor{headings}{Curriculum Vitae}}
+	{\Huge\textcolor{headings}{Robotics Engineer}}
 	
 	\vfill % Push content to the top of the box
 }
 
 %----------------------------------------------------------------------------------------
-%	MAJOR RESEARCH PROJECT
+%	Brief personal description
 %----------------------------------------------------------------------------------------
+\section{Brief description}
 
-\section{Doctoral Research}
+  Curious and \textbf{self-confident} person, level-headed and quite an experimenter.
+Passionate about programming and believing it to be a form of art.
+  Fascinated by mysteries of \textbf{science} and firm believer in technological progress.
+Enthusiastic about the latest academic discoveries in my field of expertise.
+  Looking forward to learning more about Neuroscience and Human Consciousness and combine them together with \textbf{Robotics} and \textbf{Artificial Intelligence}.
 
-{\raggedright\textbf{``Observation of Einstein-Podolsky-Rosen Entanglement on Supraquantum Structures by Induction Through Nonlinear Transuranic Crystal of Extremely Long Wavelength Pulse from Mode-Locked Source Array"}\par}
-
-\medskip % Vertical whitespace
-
-My research examined the use of ELW pulses from a mode-locked source array inducted through transuranic crystals to observe entanglement on supraquantum structures. Theoretical advancements included prediction of quantum resonance phenomena including the possibility of resonance cascades. I was motivated to conduct this doctoral research due to my passion for teleportation of matter and I believe I have laid the foundation for further experimental validation and development of practical outcomes.
-
-\medskip % Extra vertical whitespace before the next section
 
 %----------------------------------------------------------------------------------------
-%	WORK EXPERIENCE
+%     WORK EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \section{Work Experience}
@@ -91,79 +89,52 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %------------------------------------------------
 
 \jobentry
-	{Current, from Jan 1995} % Duration
+	{Current, from Oct 2020} % Duration
 	{FT} % FT/PT (full time or part time)
-	{Black Mesa Research Facility} % Employer
-	{Team Leader (Anomalous Materials)} % Job title
-	{As part of this promotion, I began conducting nuclear and subatomic research in the Anomalous Materials department. My team and I are particularly interested in dimensionality and its interaction with spacetime. The focus is on practical outcomes and applications in teleportation and communication with distal locations.} % Description
-
+        {INRIA, French national research institute} % Employer
+	{Robotics Engineer} % Job title
+	{
+          Developed a system from the ground up to \textbf{teleoperate} an industrial robot in hazardous environments.
+          Each module of the pipeline is written in C++ and it is containerized with \textbf{Docker} and communicate through \textbf{ROS} middleware.
+          Dynamics of the system is simulated in a \textbf{digital twin} using \textit{dart} and \textit{gazebo}.
+          Joint-space and Cartesian control of the robot through \textit{pinocchio} and \textit{tsid} libraries.
+          Designed a \textbf{GUI} for teleoperation with C++ library \textit{ImGui} that introduces interactive \textbf{automation} of the task.
+          Experience in URDF creation, modern C++ frameworks and libraries interfacing and
+          acquaintance with robots of the lab: \textit{franka}  manipulator \& \textit{talos} humanoid robot.
+        }
 %------------------------------------------------
 
 \jobentry
-	{Feb 1991 -- Jan 1995} % Duration
+	{Feb 2019 -- Oct 2019} % Duration
 	{FT} % FT/PT (full time or part time)
-	{Black Mesa Research Facility} % Employer
-	{Level 3 Research Associate} % Job title
-	{This position involved transitioning from purely theoretical work to experimental applications utilising the immense resources of Black Mesa. The transition required an initial learning curve in hazard containment, health and safety procedures and operating experimental infrastructure. Manipulating valves, carts, buttons, levers, etc considerably increased my physical fitness.} % Description
+	{La Sapienza, University of Rome} % Employer
+	{Master's Thesis} % Job title
+        {Implemented a robotic system to achieve autonomous navigation (\textbf{SLAM}) in an urban environment of a mobile robot equipped with a \textbf{3D-LIDAR} laser sensor.
+         The whole project has been implemented in \textbf{C++} adopting the ROS build system.
+         High-level features are extracted from the 3D-point cloud and categorized in geometric primitives.
+         The sensor data is processed using the primitives in order to compute the trajectory of the robot.
+         Usesd a probabilistic approach that involves using the \textbf{Gaussian assumption} and a \textbf{Least Square} formulation.
+         The work has been developed in collaboration with the Robotics Laboratory of La Sapienza University.\\
+         \href{https://github.com/dinies/MasterThesis-ArtificialIntelligence-Robotics/blob/master/MaterThesis_Edoardo_Ghini.pdf}{\textbf{Master thesis link}}
+         }
 
 %------------------------------------------------
-
+         
 \jobentry
-	{Jul 1982 -- Dec 1984} % Duration
-	{PT} % FT/PT (full time or part time)
-	{WashPests Limited} % Employer
-	{Pest Control Technician} % Job title
-	{In this summer job I was tasked with helping eradicate pests from industrial areas. Work involved setting traps, spraying and physical eradication. I received praise for reaching difficult areas and my innovative use of a crowbar to assist in my work.} % Description
-
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
-
-\section{References}
-
-%\textit{References available on request} % Uncomment if you'd rather not include references and remove the section below
-
-%------------------------------------------------
-
-% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
-
-%\tableentry{Heading}{Content}{spaceafter}
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
-
-%------------------------------------------------
-
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Isaac Kleiner}}{spaceafter}
-	\tableentry{Position}{Professor}{}
-	\tableentry{Employer}{\href{https://web.mit.edu/physics/}{Department of Physics}}{}
-	\tableentry{}{\href{https://web.mit.edu}{\textit{Massachusetts Institute of Technology}}}{spaceafter}
-	\tableentry{Phone}{+1 (617) 253 1000 x5322 (Work)}{}
-	\tableentry{Mobile}{+1 (232) 842-3583}{}
-	
-	%------------------------------------------------
-	
-	\\ % Additional vertical whitespace between the references
-	
-	%------------------------------------------------
-	
-	\tableentry{}{\textbf{Dr. Eli Vance}}{spaceafter}
-	\tableentry{Position}{Scientist (HL1)}{}
-	\tableentry{Employer}{\href{http://www.bmrf.us}{Black Mesa Research Facility}}{spaceafter}
-	\tableentry{Email}{\href{mailto:e.vance@bmrf.us}{e.vance@bmrf.us}}{}
-	\tableentry{Phone}{+1 (800) 786-1410 x6235 (Work)}{}
-	\tableentry{Mobile}{+1 (201) 632-3901}{}
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-\medskip % Extra vertical whitespace before the next section
-
-%----------------------------------------------------------------------------------------
+	{Mar 2016 -- Jul 2016} % Duration
+	{FT} % FT/PT (full time or part time)
+	{Translated} % Employer
+	{Back-end developer} % Job title
+	{
+          During this internship, I was responsible for the codebase of a web application: \textbf{Matecat}, written in PHP.
+          I developed unit-tests to certify the correctness of the core of the application.
+          Brought code coverage percentage from 0\% to 25\%.
+          Worked with databases and client-server communications: \textbf{MySQL} and \textbf{Apache}.
+          Learned how to work in \textbf{agile} teams, following \textbf{scrum} principles.
+          Acquired deep knowledge of advanced testing techniques: \textbf{mock objects}, \textbf{reflection}, and \textbf{TDD}.\\
+          \href{https://github.com/dinies/BachelorThesis/blob/master/EdoardoGhiniThesis.pdf}{\textbf{Bachelor thesis link}}
+        }
+            
 
 \switchcolumn % Switch to the second (right) column
 
@@ -171,15 +142,16 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 %	COLORED CONTACT DETAILS BOX
 %----------------------------------------------------------------------------------------
 
+\definecolor{Sky}{RGB}{204,230,255}
 \parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
-	\colorbox{shade}{ % Create colored box and specify background color
+	\colorbox{Sky}{ % Create colored box and specify background color
 		\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-			\raisebox{-1pt}{\faHome} & P.O. Box 3985, Black Mesa Drive, NM 87545 \\ % Address
-			\raisebox{-1pt}{\faPhone} & +1 (800) 786-1410 \\ % Phone number
-			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:g.freeman@bmrf.us}{g.freeman@bmrf.us} \\ % Email address
-			\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
-			%\raisebox{-1pt}{\faGithub} & \href{https://github.com/username}{https://github.com/username} \\ % GitHub profile
-			%\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/username}{https://www.linkedin.com/in/username} \\ % LinkedIn profile
+			\raisebox{-1pt}{\faHome} & Nancy, France \\ % Address
+			\raisebox{-1pt}{\faPhone} & +33 6 73 03 31 71  (FR) \\ % Phone number
+			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:ghiniedoardo@gmail.com}{ghiniedoardo@gmail.com} \\ % Email address
+			%\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
+			\raisebox{-1pt}{\faGithub} & \href{https://github.com/dinies}{github.com/dinies} \\ % GitHub profile
+			\raisebox{-1pt}{\faLinkedinSquare} & \href{https://www.linkedin.com/in/dinies/}{linkedin.com/in/dinies} \\ % LinkedIn profile
 			% See fontawesome.pdf in the Fonts folder for all icons you can use
 		\end{supertabular}
 	}
@@ -210,69 +182,60 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	%------------------------------------------------
 	
 	\qualificationentry
-		{1986 -- 1990} % Duration
-		{Doctor of Philosophy} % Degree
-		{} % Honors, achievements or distinctions (e.g. first class honors)
-		{Theoretical Physics} % Department
-		{Massachusetts Institute of Technology} % Institution
+		{2016 -- 2019} % Duration
+		{Master of Science } % Degree
+		{final grade 103 /110} % Honors, achievements or distinctions (e.g. first class honors)
+		{Master in Artificial Intelligence and Robotics} % Department
+		{La Sapienza, University of Rome} % Institution
 	
 	%------------------------------------------------
 	
 	\qualificationentry
-		{1985} % Duration
-		{Master of Science} % Degree
-		{First Class Honors} % Honors, achievements or distinctions (e.g. first class honors)
-		{Theoretical Physics} % Department
-		{Massachusetts Institute of Technology} % Institution
-	
-	%------------------------------------------------
-	
-	\qualificationentry
-		{1982 -- 1984} % Duration
-		{Bachelor of Physics} % Degree
-		{} % Honors, achievements or distinctions (e.g. first class honors)
-		{Department of Physics} % Department
-		{The University of Washington} % Institution
-	
-	%------------------------------------------------
+		{2013 -- 2016} % Duration
+		{Bachelor of Science} % Degree
+		{final grade 95 /110} % Honors, achievements or distinctions (e.g. first class honors)
+		{Computer Engineering} % Department
+		{Roma Tre University} % Institution
 
-\end{supertabular}
-
-%----------------------------------------------------------------------------------------
-%	AWARDS
-%----------------------------------------------------------------------------------------
-
-\section{Awards}
-
-% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
-
-%\tableentry{Heading}{Content}{spaceafter}
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
-
-%------------------------------------------------
-
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\tableentry{1985}{\textbf{Faculty of Science Masters Scholarship}}{}
-	\tableentry{}{\textit{Massachusetts Institute of Technology}}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{1983}{\textbf{Top Achiever Award -- Physics}}{}
-	\tableentry{}{\textit{The University of Washington}}{spaceafter}
-	
-	%------------------------------------------------
-	
 \end{supertabular}
 
 %----------------------------------------------------------------------------------------
 %	COMPUTER SKILLS
 %----------------------------------------------------------------------------------------
 
-\section{Computer Skills} 
+\section{Programming Skills} 
+
+% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
+
+%\tableentry{Heading}{Content}{spaceafter}
+% All 3 parameters must be supplied but any can be empty if you don't need them
+% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
+
+%------------------------------------------------
+
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	
+	\tableentry{Languages}{C++,\hspace{0.05cm} python,\hspace{0.05cm} \LaTeX,\hspace{0.05cm} Javascript }{}
+	\tableentry{}{ Java,\hspace{0.05cm} bash,\hspace{0.05cm} MATLAB,\hspace{0.05cm} PHP }{spaceafter}
+	%------------------------------------------------
+	\tableentry{C++20}{ templates,\hspace{0.05cm} labdas,\hspace{0.05cm} move semantic }{}
+	\tableentry{}{ smartpointers,\hspace{0.05cm} concepts }{spaceafter}
+	%------------------------------------------------
+        \tableentry{Design}{OOP,\hspace{0.05cm} polymorphism,\hspace{0.05cm} functional programming }{spaceafter}
+	%------------------------------------------------
+	\tableentry{Testing}{TDD,\hspace{0.05cm} reflection,\hspace{0.05cm} mock objects,\hspace{0.05cm} googletest }{spaceafter}
+	%------------------------------------------------
+	\tableentry{Libraries}{OpenCV,\hspace{0.05cm} tensoflow,\hspace{0.05cm} OpenGL,\hspace{0.05cm} dart,\hspace{0.05cm} ImGui }{spaceafter}
+	%------------------------------------------------
+	\tableentry{DevOps}{ cmake,\hspace{0.05cm} Docker,\hspace{0.05cm} git,\hspace{0.05cm} vim,\hspace{0.05cm} gdb,\hspace{0.05cm} valgrind}{spaceafter}
+	%------------------------------------------------
+\end{supertabular}
+
+%----------------------------------------------------------------------------------------
+%	THEORETICALSKILLS
+%----------------------------------------------------------------------------------------
+
+\section{Theoretical Skills}
 
 % This section is laid out using a table. A \tableentry command adds lines with the following parameters:
 
@@ -286,27 +249,35 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 	
 	%------------------------------------------------
 	
-	\tableentry{Beginner}{Java, MS DOS}{spaceafter}
+	\tableentry{Robotics }{ dynamic systems evolution,\hspace{0.05cm} quaternions }{}
+	\tableentry{Control }{inverse dynamics,\hspace{0.05cm} robust control }{spaceafter}
 	
 	%------------------------------------------------
 	
-	\tableentry{Intermediate}{Javascript, Python, HTML, CSS,}{}
-	\tableentry{}{Microsoft Windows}{}
-	\tableentry{}{Computer Hardware \& Support}{spaceafter}
-	
+	\tableentry{Robotic }{ SLAM,\hspace{0.05cm} trajectory planning}{}
+	\tableentry{Navigation }{ obstacle avoidance,\hspace{0.05cm} filtering }{spaceafter}
+
 	%------------------------------------------------
 	
-	\tableentry{Expert}{Perl, Unix, \LaTeX}{spaceafter}
-	
+	\tableentry{Machine}{ bioinspired networks,\hspace{0.05cm} CNN }{}
+	\tableentry{Learning}{ spiking neurons,\hspace{0.05cm} LSTM }{spaceafter}
+
 	%------------------------------------------------
-	
+        \tableentry{artificial}{ multiagent systems,\hspace{0.05cm} reinforcement learning}{}
+	\tableentry{intelligence}{ first order logic }{spaceafter}
+
+        \tableentry{computer}{ operative systems,\hspace{0.05cm} network protocols }{}
+	\tableentry{science}{ algorithms design,\hspace{0.05cm} databases }{spaceafter}
+
 \end{supertabular}
 
 %----------------------------------------------------------------------------------------
-%	COMMUNICATION SKILLS
+%	REFERENCES
 %----------------------------------------------------------------------------------------
 
-\section{Communication Skills}
+\section{References}
+
+%\textit{References available on request} % Uncomment if you'd rather not include references and remove the section below
 
 % This section is laid out using a table. A \tableentry command adds lines with the following parameters:
 
@@ -314,103 +285,23 @@ My research examined the use of ELW pulses from a mode-locked source array induc
 % All 3 parameters must be supplied but any can be empty if you don't need them
 % A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
 
-%------------------------------------------------
-
 \begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
 	
-	%------------------------------------------------
+        \tableentry{}{\href{https://members.loria.fr/SIvaldi/}{\textbf{Dr. Serena Ivaldi}}}{spaceafter}
+	\tableentry{Position}{Research scientist}{}
+	\tableentry{Employer}{\href{https://www.inria.fr/}{INRIA}}{spaceafter}
 	
-	\tableentry{Conferences}{Oral Presentation at the Annual MIT}{}
-	\tableentry{}{Theoretical Physics Conference -- 1987}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\tableentry{Posters}{Poster at the Meeting of the American}{}
-	\tableentry{}{Physical Society -- 1985}{spaceafter}
-	
-	%------------------------------------------------
-	
+        \tableentry{}{\href{https://sites.google.com/dis.uniroma1.it/grisetti/home}{\textbf{Dr. Giorgio Grisetti}}}{spaceafter}
+	\tableentry{Position}{Professor}{}
+	\tableentry{Employer}{\href{https://www.uniroma1.it/}{La Sapienza, University of Rome}}{spaceafter}
 \end{supertabular}
-
-%----------------------------------------------------------------------------------------
-%	SKILLS DESCRIPTION
-%----------------------------------------------------------------------------------------
-
-\section{Skills}
-
-\subsection{Goal Oriented}
-
-I believe in action over long-winded discussions. I listen to everyone's viewpoints and use my judgement to immediately act based on consensus to achieve goals quickly and efficiently.
-
-\subsection{Physical Dexterity}
-
-Manual manipulation of experimental equipment and training within Black Mesa (e.g. the Hazard Course) have contributed to an enjoyment of working with my hands.
-
-\subsection{Passionate}
-
-I have been interested in theoretical physics such as quantum mechanics and relativity from an early age. My education and research have cemented this interest into a passion. I greatly enjoy carrying out fundamental physics research with potential practical applications.
-
-%----------------------------------------------------------------------------------------
-%	PUBLICATIONS
-%----------------------------------------------------------------------------------------
-
-\section{Publications}
-
-%------------------------------------------------
-
-\textbf{Freeman, G. R.} (1996). Chemistry of Multiply Charged Negative Molecular Ions and Clusters in the Gas Phase:  Terrestrial and in Intense Galactic Magnetic Fields. \textit{The Journal of Physical Chemistry}, \textit{100}(11), 4331-4338.
-
-\medskip % Vertical whitespace
-
-Jacobsen, F. M., Gee, N., \textbf{Freeman, G. R.} (1986). Electron mobility in liquid krypton as function of density, temperature, and electric field strength. \textit{Physical Review A}, \textit{34}(3): 2329-2335.
-
-\medskip % Vertical whitespace
-
-%------------------------------------------------
-
-% As an alternative to a long-form publication list, you can create a shorter summary using only DOI values and years.
-
-% Example \doipublication{} command to add another publication:
-
-%\doipublication{Year}{DOI}{firstauthor}{spaceafter}
-
-% All four parameters are required (can be empty though)
-% A value of "firstauthor" in the third parameter will output the DOI in bold
-% A "spaceafter" value in the fourth parameter will add some vertical space -- this is to be used between years
-
-%------------------------------------------------
-
-\subsection{Publications by DOI}
-
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
-	
-	%------------------------------------------------
-	
-	\doipublication{1996}{10.1021/jp951483+}{firstauthor}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\doipublication{1990}{10.1139/p90-097}{firstauthor}{spaceafter}
-	
-	%------------------------------------------------
-	
-	\doipublication{1986}{10.1139/v86-297}{}{}
-	\doipublication{}{10.1103/PhysRevA.34.2329}{}{spaceafter}
-	
-	%------------------------------------------------
-	
-	& \textit{First author publications in} \textbf{bold}\\
-	
-	%------------------------------------------------
-	
-\end{supertabular}
-
-\medskip % Extra whitespace before the next section
-
-%----------------------------------------------------------------------------------------
 
 \end{paracol} % End two-column mode
 
-%----------------------------------------------------------------------------------------
+\textcolor{headings}{Languages:} \qquad \textbf{Italian:}  native \qquad
+                                \textbf{English:}  IELTS academic cert. Overall band score \textbf{7.0} CEFR level \textbf{C1}
+\smallskip
+
+\textcolor{headings}{Privacy:}\quad"In compliance with the GDPR and Italian Legislative Decree no. 196 dated 30/06/2003, I hereby authorize the recipient of this document to use and process my personal details for the purpose of recruiting and selecting staff and I confirm to be informed of my rights in accordance to art. 7 of the above mentioned Decree".
 
 \end{document}

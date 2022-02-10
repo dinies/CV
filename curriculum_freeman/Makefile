@@ -1,10 +1,12 @@
-.PHONY : all latex view clean distclean
+.PHONY : all latex latexcp view clean distclean
 
 TARGET=main
 SOURCE=$(TARGET).tex
 
-
 latex:
+	xelatex $(SOURCE)
+
+latexcp:
 	xelatex $(SOURCE)
 	cp $(TARGET).pdf ~/exchange/cv_freeman.pdf
 

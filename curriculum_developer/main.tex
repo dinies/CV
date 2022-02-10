@@ -26,6 +26,8 @@
 
 \begin{document}
 
+\def\photo{0}
+
 %----------------------------------------------------------------------------------------
 %	TITLE AND CONTACT INFORMATION
 %----------------------------------------------------------------------------------------
@@ -43,84 +45,93 @@
 	
 	{\huge Robotics and AI engineer} % Career or current job title
 \end{minipage}
+\hfill % Whitespace between
+\begin{minipage}[t]{0.215\textwidth} % 27.5% of the page width for the second row of icons
+	\vspace{-\baselineskip} % Required for vertically aligning minipages
+        \if\photo1
+          \includegraphics[width=0.75\textwidth]{meCropped}
+        \fi
+\end{minipage}
+\hfill % Whitespace between
 \begin{minipage}[t]{0.285\textwidth} % 27.5% of the page width for the first row of icons
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
 	
 	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
 	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-	\icon{Phone}{12}{+0039 339 1165 306}\\
+        \icon{Phone}{12}{+33 6 73 03 31 71  (FR)}\\
 	\icon{At}{12}{\href{mailto:ghiniedoardo@gmail.com}{ghiniedoardo@gmail.com}}\\	
-	\icon{MapMarker}{12}{Rome, Italy}\\
+	\icon{MapMarker}{12}{Nancy, France}\\
 	\icon{Github}{12}{\href{https://github.com/dinies}{github.com/dinies}}\\
 	\icon{LinkedinSquare}{12}{\href{https://www.linkedin.com/in/dinies/}{linkedin.com/in/dinies}}\\
 \end{minipage}
-\begin{minipage}[t]{0.215\textwidth} % 27.5% of the page width for the second row of icons
-	\vspace{-\baselineskip} % Required for vertically aligning minipages
-        \includegraphics[width=0.75\textwidth]{meCropped}
-	% The first parameter is the FontAwesome icon name, the second is the box size and the third is the text
-	% Other icons can be found by referring to fontawesome.pdf (supplied with the template) and using the word after \fa in the command for the icon you want
-\end{minipage}
 
-\vspace{0.5cm}
-\vspace{0.5cm}
+
+\vspace{0.2cm}
 
 %----------------------------------------------------------------------------------------
 %	INTRODUCTION, SKILLS AND TECHNOLOGIES
 %----------------------------------------------------------------------------------------
 
-
-\begin{minipage}[t]{0.45\textwidth} % 40% of the page width for the introduction text
+\begin{minipage}[t]{0.40\textwidth} % 40% of the page width for the introduction text
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
         \cvsect{Who am I?}\\
         Curious and self-confident person.\\
+        Passionate about programming and believing it to be a form of art.\\
         Fascinated by mysteries of science and firm believer in technological progress.\\
-        Just finished my academic studies and willing to apply them in the field.\\
-        Enthusiastic about the latest science-related discoveries in the field of Computational Neuroscience.\\
+        Enthusiastic about the latest academic discoveries in my field of expertise.\\
         Looking forward to learning more about Neuroscience and Human Consciousness and combine them together with Artificial Intelligence and Robotics.
 
-\vspace{0.5cm}
+     \vspace{0.1cm}
 
-\cvsect{Tools}\\
-\begin{center}
-	\bubbles{ 2/emacs,  5/git,  6/vim,  5/unix,  3/ROS}
-\end{center}
-
+        \cvsect{Tools}\\
+        \begin{center}
+	  \bubbles{ 3/git, 5/Docker, 6/Cpp , 5/vim,  4/ROS,  3/unix}
+        \end{center}
 
 \end{minipage}
 \hfill % Whitespace between
 \begin{minipage}[t]{0.5\textwidth} % 50% of the page for the skills bar chart
 	\vspace{-\baselineskip} % Required for vertically aligning minipages
-        \cvsect{Languages}
+
+        \cvsect{Theoretical Skills}
 	\begin{barchart}{5.5}
-		\baritem{C++}{100}
-		\baritem{Python}{90}
-		\baritem{Java}{60}
-		\baritem{JavaScript}{50}
-		\baritem{MATLAB}{70}
-		\baritem{LaTeX}{80}
-		\baritem{Prolog}{60}
-	\end{barchart}
-        \vspace{0.5cm}
-        \cvsect{Skills}
-	\begin{barchart}{5.5}
-		\baritem{Control theory}{30}
+		\baritem{Control theory}{50}
 		\baritem{Robotic perception}{60}
 		\baritem{Machine learning}{30}
+		\baritem{Trajectory planning}{40}
 		\baritem{Dynamic systems simulation}{50}
-		\baritem{Algorithms design}{40}
 	\end{barchart}
-\end{minipage}
+
+        \vspace{0.5cm}
+        \vspace{0.5cm}
+
+        \cvsect{Programming Skills}
+	\begin{barchart}{5.5}
+	        \baritem{Algorithms design}{40}
+	        \baritem{TDD}{50}
+	        \baritem{OOP}{60}
+	        \baritem{Containerization}{50}
+	\end{barchart}
+
+   \end{minipage}
 %----------------------------------------------------------------------------------------
 %	EXPERIENCE
 %----------------------------------------------------------------------------------------
 
 \vspace{0.5cm}
-\vspace{0.5cm}
 
 \cvsect{Experience}
 
 \begin{entrylist}
-	\entry
+        \entry
+		{10/2020 -- 3/2022}
+		{Robotics Engineer}
+		{Inria , French national research institute for digital science and technology}
+		{
+                  Developed a system from the ground up to teleoperate an industrial robot in hazardous environments.
+                }
+
+        \entry
 		{2/2019 -- 10/2019}
 		{Master's Thesis}
 		{La Sapienza, University of Rome}
