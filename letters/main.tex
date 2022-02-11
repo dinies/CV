@@ -1,0 +1,62 @@
+\documentclass[12pt]{article}
+\usepackage[
+	a4paper, % Paper size
+	top=1.75cm, % Top margin
+	bottom=1.75cm, % Bottom margin
+	left=3.5cm, % Left margin
+	right=3.5cm, % Right margin
+	footskip=1cm, % Space from the bottom margin to the baseline of the footer
+	headsep=0.5cm, % Space from the top margin to the baseline of the header
+	headheight=1cm, % Height of the header
+	%showframe % Uncomment to show frames around the margins for debugging purposes
+]{geometry}
+
+\usepackage[usenames, svgnames]{xcolor} % Required for defining and using custom colors
+\definecolor{headings}{HTML}{701112} % Dark red color for headings
+\definecolor{linkcolor}{HTML}{641c1d} % 25% desaturated headings color for links
+
+\usepackage{hyperref} % Required for links
+\hypersetup{
+	colorlinks=true, % Whether to color the text of links
+	urlcolor=linkcolor, % Color for \url and \href links
+	linkcolor=linkcolor, % Color for \nameref links
+}
+\usepackage[ddmmyyyy]{datetime}
+\usepackage[english]{babel}
+\usepackage{ragged2e}
+
+\begin{document}
+\begin{FlushRight}
+\today\\
+\bigskip
+{\sffamily Dr. Edoardo Ghini}\\
+\textcolor{headings}{Robotics Engineer}\\
+\medskip
+Nancy, France\\
++33 6 73 03 31 71\\
+ghiniedoardo@gmail.com
+\end{FlushRight}
+
+\begin{FlushLeft}
+Mr. Jhon Doe\\
+Role\\
+Company\\
+City
+
+\vspace{2cm}
+Dear Mr. Jhon Doe,\\
+
+\input{letter.tex}
+%\input{project_telemovtop.tex}
+\input{project_spikingcnn.tex}
+\input{project_spikingcnn.tex}
+\input{project_spikingcnn.tex}
+%\input{project_3dloamslam.tex}
+\bigskip
+\bigskip
+Sincerely,\\
+Edoardo Ghini
+\end{FlushLeft}
+
+
+\end{document}

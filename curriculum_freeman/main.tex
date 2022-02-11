@@ -27,7 +27,7 @@
 
 \documentclass[
 	10pt, % Default font size, can be between 8pt and 12pt
-]{FreemanCV}
+]{../templates/FreemanCV}
 
 \columnratio{0.55, 0.45} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content 
 
@@ -144,7 +144,7 @@ Enthusiastic about the latest academic discoveries in my field of expertise.
 
 \definecolor{Sky}{RGB}{204,230,255}
 \parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
-	\colorbox{Sky}{ % Create colored box and specify background color
+	\colorbox{White}{ % Create colored box and specify background color
 		\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
 			\raisebox{-1pt}{\faHome} & Nancy, France \\ % Address
 			\raisebox{-1pt}{\faPhone} & +33 6 73 03 31 71  (FR) \\ % Phone number
@@ -264,7 +264,7 @@ Enthusiastic about the latest academic discoveries in my field of expertise.
 
 	%------------------------------------------------
         \tableentry{artificial}{ multiagent systems,\hspace{0.05cm} reinforcement learning}{}
-	\tableentry{intelligence}{ first order logic }{spaceafter}
+	\tableentry{intelligence}{ first order logic,\hspace{0.05cm} planning and reasoning}{spaceafter}
 
         \tableentry{computer}{ operative systems,\hspace{0.05cm} network protocols }{}
 	\tableentry{science}{ algorithms design,\hspace{0.05cm} databases }{spaceafter}
@@ -299,7 +299,8 @@ Enthusiastic about the latest academic discoveries in my field of expertise.
 \end{paracol} % End two-column mode
 
 \textcolor{headings}{Languages:} \qquad \textbf{Italian:}  native \qquad
-                                \textbf{English:}  IELTS academic cert. Overall band score \textbf{7.0} CEFR level \textbf{C1}
+                                \textbf{English:}  IELTS academic cert. Overall band score \textbf{7.0} CEFR level \textbf{C1}\qquad
+                                \textbf{French:} level \textbf{B2} 
 \smallskip
 
 \textcolor{headings}{Privacy:}\quad"In compliance with the GDPR and Italian Legislative Decree no. 196 dated 30/06/2003, I hereby authorize the recipient of this document to use and process my personal details for the purpose of recruiting and selecting staff and I confirm to be informed of my rights in accordance to art. 7 of the above mentioned Decree".
