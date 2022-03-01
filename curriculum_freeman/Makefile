@@ -8,7 +8,7 @@ latex:
 
 latexcp:
 	xelatex $(SOURCE)
-	cp $(TARGET).pdf ~/exchange/cv_freeman.pdf
+	cp $(TARGET).pdf ~/exchange/CV_Edoardo_Ghini.pdf
 
 view:
 	xdg-open $(TARGET).pdf &
