@@ -47,9 +47,7 @@ RUN if [ "$dev_enabled" = "true" ]; then \
     git config --global user.name "$git_name" && \
     git config --global user.email "$git_email" && \
     git config --global push.default simple && \
-    git clone git@github.com:dinies/dotfiles.git && \
-    ./dotfiles/set_up.sh &&\
-    clang-format -style=google -dump-config > .clang-format ;\
+    git clone git@github.com:dinies/dotfiles.git; \ 
 fi
 
 WORKDIR /home/$USERNAME
