@@ -57,8 +57,8 @@
 \parbox[top][0.11\textheight][c]{\linewidth}{ % Box to hold the colored box; change the fixed height as needed to match the box to the left
 	\colorbox{White}{ % Create colored box and specify background color
 		\begin{supertabular}{@{\hspace{3pt}} p{0.05\linewidth} | p{0.775\linewidth}} % Start a table with two columns, the table will ensure everything is aligned
-			\raisebox{-1pt}{\faHome} & Nancy, France \\ % Address
-			\raisebox{-1pt}{\faPhone} & +33 6 73 03 31 71  (FR) \\ % Phone number
+			\raisebox{-1pt}{\faHome} & Bristol, UK\\ % Address
+      \raisebox{-1pt}{\faPhone} & +44 788 3037470 \\ % Phone number
 			\raisebox{-1pt}{\small\faEnvelope} & \href{mailto:ghiniedoardo@gmail.com}{ghiniedoardo@gmail.com} \\ % Email address
 			%\raisebox{-1pt}{\small\faDesktop} & \href{https://www.LaTeXTemplates.com}{https://www.LaTeXTemplates.com} \\ % Website
 			\raisebox{-1pt}{\faGithub} & \href{https://github.com/dinies}{github.com/dinies} \\ % GitHub profile
@@ -73,12 +73,10 @@
 
 
 \section{Career Motivation}
-
-  Curious and \textbf{self-confident} person, level-headed and quite an experimenter.
-Passionate about programming and believing it to be a form of art.
-  Fascinated by mysteries of \textbf{science} and firm believer in technological progress.
-Enthusiastic about the latest academic discoveries in my field of expertise.
-  Looking forward to learning more about Neuroscience and Human Consciousness and combine them together with \textbf{Robotics} and \textbf{Artificial Intelligence}.
+I am striving to develop my career in the direction that will bring me to work at the most interesting topics.\\
+Having a passion for robotics and programming makes me love to create complex things with code.\\
+I consider myself extremely curious and always ready to understand deeply how things work.\\
+Always trying to be involved in the most interesting and fascinating ideas in the field.
 
 \section{Education}
 
@@ -111,6 +109,7 @@ The thesis covered what I learnt in the brief internship as a PHP back-end devel
 \end{paracol} % End two-column mode
 
 
+\begin{paracol}{2} % Begin two-column mode
 \begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
 	\qualificationentry
 		{2016 -- 2019} % Duration
@@ -120,200 +119,137 @@ The thesis covered what I learnt in the brief internship as a PHP back-end devel
 		{La Sapienza, University of Rome} % Institution
 
 \end{supertabular}\\
+This degree had a pivotal role in me figuring out what was my passion.
+It covered extensively the foundation of Robotics such as rigid body kinematics and dynamics,
+autonomous navigation, filtering and of Artificial intelligence teaching first-order logic and
+planning and reasoning.
+A lot of practical experience came alongside the theory in the form of several deeply invested
+projects.\\
+  My thesis was in internal to the university, and consisted in implementing a 3D Lidar \textbf{SLAM} pipeline:
+I used a probabilistic approach (\textbf{Gaussian assumption}) in a \textbf{Least Square} formulation
+extracting High-level geometric features. Everything was implemented in C++ using ROS.\\
+\textbf{Thesis:}
+\href{https://github.com/dinies/MasterThesis-ArtificialIntelligence-Robotics/blob/master/MaterThesis_Edoardo_Ghini.pdf}
+  {\textit{Position tracking using high order primitives}}
 
-
-
-
-
-
-\newpage
-\begin{paracol}{2} % Begin two-column mode
+\switchcolumn % Switch to the second (right) column
+\section{Subjects}
+\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
+	\tableentry{Probabilistic Robotics}{}{}
+	\tableentry{Computer Vision}{}{}
+	\tableentry{Control Theory}{}{}
+	\tableentry{Multiagent Systems}{}{}
+	\tableentry{Path planning}{}{}
+	\tableentry{First-order logic}{}{}
+	\tableentry{Computer Graphics}{}{}
+	\tableentry{Neural Networks}{}{}
+	\tableentry{Drones Control}{}{}
+	\tableentry{Machine Learning}{}{}
+	\tableentry{Robust Control}{}{}
+	\tableentry{Humanoids gait}{}{spaceafter}
+\end{supertabular}
+\end{paracol} % End two-column mode
 
 \section{Work Experience}
-
-% Each job is added with a \jobentry command. Below is an empty one to use as a template:
-
-%\jobentry
-%	{} % Duration
-%	{} % FT/PT (full time or part time)
-%	{} % Employer
-%	{} % Job title
-%	{} % Description
-
-% All 5 parameters must be supplied but any can be empty if you don't need them
-
-%------------------------------------------------
-
-\jobentry
-	{Current, from Oct 2020} % Duration
-	{FT} % FT/PT (full time or part time)
-        {INRIA, French national research institute} % Employer
-	{Robotics Engineer} % Job title
-	{
-          Developed a system from the ground up to \textbf{teleoperate} an industrial robot in hazardous environments.
-          Each module of the pipeline is written in C++ and it is containerized with \textbf{Docker} and communicate through \textbf{ROS} middleware.
-          Dynamics of the system is simulated in a \textbf{digital twin} using \textit{dart} and \textit{gazebo}.
-          Joint-space and Cartesian control of the robot through \textit{pinocchio} and \textit{tsid} libraries.
-          Designed a \textbf{GUI} for teleoperation with C++ library \textit{ImGui} that introduces interactive \textbf{automation} of the task.
-          Experience in URDF creation, modern C++ frameworks and libraries interfacing and
-          acquaintance with robots of the lab: \textit{franka}  manipulator \& \textit{talos} humanoid robot.
-        }
-%------------------------------------------------
-
-\jobentry
-	{Feb 2019 -- Oct 2019} % Duration
-	{FT} % FT/PT (full time or part time)
-	{La Sapienza, University of Rome} % Employer
-	{Master's Thesis} % Job title
-        {Implemented a robotic system to achieve autonomous navigation (\textbf{SLAM}) in an urban environment of a mobile robot equipped with a \textbf{3D-LIDAR} laser sensor.
-         The whole project has been implemented in \textbf{C++} adopting the ROS build system.
-         High-level features are extracted from the 3D-point cloud and categorized in geometric primitives.
-         The sensor data is processed using the primitives in order to compute the trajectory of the robot.
-         Usesd a probabilistic approach that involves using the \textbf{Gaussian assumption} and a \textbf{Least Square} formulation.
-         The work has been developed in collaboration with the Robotics Laboratory of La Sapienza University.\\
-         \href{https://github.com/dinies/MasterThesis-ArtificialIntelligence-Robotics/blob/master/MaterThesis_Edoardo_Ghini.pdf}{\textbf{Master thesis link}}
-         }
-
-%------------------------------------------------
-
 \jobentry
 	{Mar 2016 -- Jul 2016} % Duration
-	{FT} % FT/PT (full time or part time)
+	{Full Time} % FT/PT (full time or part time)
 	{Translated} % Employer
 	{Back-end developer} % Job title
 	{
-          During this internship, I was responsible for the codebase of a web application: \textbf{Matecat}, written in PHP.
-          I developed unit-tests to certify the correctness of the core of the application.
-          Brought code coverage percentage from 0\% to 25\%.
-          Worked with databases and client-server communications: \textbf{MySQL} and \textbf{Apache}.
-          Learned how to work in \textbf{agile} teams, following \textbf{scrum} principles.
-          Acquired deep knowledge of advanced testing techniques: \textbf{mock objects}, \textbf{reflection}, and \textbf{TDD}.\\
-          \href{https://github.com/dinies/BachelorThesis/blob/master/EdoardoGhiniThesis.pdf}{\textbf{Bachelor thesis link}}
-        }
+    During this internship, I was responsible for the codebase of a web application (\href{https://www.matecat.com/}{\textbf{Matecat}}), written in PHP.
+    I developed unit-tests to certify the correctness of the core of the application.
+    Dealing with databases, caching and client-server communications: \textbf{MySQL},\textbf{Redis}, and \textbf{Apache}.
+    Learner advanced testing techniques: \textbf{mock objects}, \textbf{reflection}, and \textbf{TDD}.
+  }
+
+\newpage
+\jobentry
+	{OCT 2020,APR 2022} % Duration
+	{Full Time} % FT/PT (full time or part time)
+  {INRIA, French national research institute} % Employer
+	{Robotics Engineer} % Job title
+	{
+    I developed from scratch a system to \textbf{teleoperate} an industrial robot in hazardous environments.\\
+    Each module of the pipeline was written in C++ and containerized with \textbf{Docker} and communicating through \textbf{ROS}.\\
+    The dynamics of the system was simulated in a \textbf{digital twin} using \textit{dart} and \textit{gazebo}.
+    Joint-space and Cartesian control of the robot were using \textit{pinocchio} and \textit{tsid} libraries.
+    I designed a \textbf{GUI} for teleoperation with the C++ library \textit{ImGui}
+    where I used quaternions extensively and designed a state machine to introduce \textbf{automation} of the task.\\
+    Learned the formulation of the Dynamic Programming problem used to solve control problems on humanoid robots.
+    I also developed experience in URDF creation, modern C++ frameworks and
+    acquaintance with robots of the lab: the manipulator  \href{https://www.franka.de/}{\textit{franka}}
+    and the humanoid robot \href{https://pal-robotics.com/robots/talos/}{\textit{talos}}.
+    This project resulted in the publication of this \href{https://hal.laas.fr/LORIA-AIS/hal-03996168v2}{\textbf{paper}}
+    in the conference \textbf{IEEE ARSO}, Jun 2023, Berlin.
+  }
+
+\jobentry
+	{JUN 2022, Now} % Duration
+	{Full Time} % FT/PT (full time or part time)
+  {Kudan} % Employer
+	{Software Engineer} % Job title
+	{
+    I am working in an R\&D team focussing on SLAM both LiDAR and camera based.\\
+    Maintaining and enhancing a C++ library deployed on multi-platform.
+    I am working hard to transform promising academic results in production ready code
+    and became more aware of depths of the software cycle (planning, code reviews, deployment).
+    Constantly strengthening my theoretical knowledge base in state estimation and graph optimisation.\\
+    Working with pose constraints (GPS, INS) and IMU data.
+    Getting to know the intricacies of \textit{Lie algebra} to deal with \( SE(3) \) manifolds and enforce the
+    probabilistic approach with covariance estimation and propagation.\\
+    Frequently using templates and design patterns (e.g. factory pattern) in development.\\
+    Always applying best practices according to the C++ standard such as move semantic.
+  }
+
+
+\begin{paracol}{2} % Begin two-column mode
+
+\section{Personal Projects}
+
+  \textbf{Spiking network CNN for classification}\\
+  I implemented a custom tensorflow layer to obtain a NN of spiking neurons to be used in image classification.
+  \medskip\\
+  \textbf{Chess endgames RL engine}\\
+  I developed in python a reinforcement learning strategy to a achieve autonomous playing on a three by eight
+  board with only Kings and Pawns.
+  \medskip\\
+  \textbf{3D game in WebGL using shaders and lighting tecniques}\\
+  I created an imitation of the game \textit{Slander man} using computer graphics primitives in Javascript.
+  \medskip\\
+  \textbf{Multi agent algorithm for camera field of view coverage}\\
+  I implemented an article in C++ to solve the problem of multiple cameras at the corners of a room trying
+  to minimise blind spots. With visualisation in OpenGL.
+
 \switchcolumn % Switch to the second (right) column
 
-%----------------------------------------------------------------------------------------
-%	EDUCATION
-%----------------------------------------------------------------------------------------
-
-\section{Education}
-
-% Each qualification entry is added with a \qualificationentry command. Below is an empty one to use as a template:
-
-%\qualificationentry
-%	{} % Duration
-%	{} % Degree
-%	{} % Honors, achievements or distinctions (e.g. first class honors)
-%	{} % Department
-%	{} % Institution
-
-% All 5 parameters must be supplied but any can be empty if you don't need them
-
-%------------------------------------------------
-%----------------------------------------------------------------------------------------
-%	COMPUTER SKILLS
-%----------------------------------------------------------------------------------------
-
-\section{Programming Skills}
-
-% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
-
-%\tableentry{Heading}{Content}{spaceafter}
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
-
-%------------------------------------------------
-
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
-
-	\tableentry{Languages}{C++,\hspace{0.05cm} python,\hspace{0.05cm} \LaTeX,\hspace{0.05cm} Javascript }{}
-	\tableentry{}{ Java,\hspace{0.05cm} bash,\hspace{0.05cm} MATLAB,\hspace{0.05cm} PHP }{spaceafter}
-	%------------------------------------------------
-	\tableentry{C++20}{ variadic templates,\hspace{0.05cm} move semantic }{}
-	\tableentry{}{ smartpointers,\hspace{0.05cm} concepts,\hspace{0.05cm} lambdas }{spaceafter}
-	%------------------------------------------------
-        \tableentry{Design}{OOP,\hspace{0.05cm} polymorphism,\hspace{0.05cm} functional programming }{spaceafter}
-	%------------------------------------------------
-	\tableentry{Testing}{TDD,\hspace{0.05cm} reflection,\hspace{0.05cm} mock objects,\hspace{0.05cm} googletest }{spaceafter}
-	%------------------------------------------------
-	\tableentry{Libraries}{OpenCV,\hspace{0.05cm} tensoflow,\hspace{0.05cm} OpenGL,\hspace{0.05cm} dart,\hspace{0.05cm} ImGui }{spaceafter}
-	%------------------------------------------------
-	\tableentry{DevOps}{ cmake,\hspace{0.05cm} Docker,\hspace{0.05cm} git,\hspace{0.05cm} vim,\hspace{0.05cm} gdb,\hspace{0.05cm} valgrind}{spaceafter}
-	%------------------------------------------------
-\end{supertabular}
-
-%----------------------------------------------------------------------------------------
-%	THEORETICALSKILLS
-%----------------------------------------------------------------------------------------
-
-\section{Theoretical Skills}
-
-% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
-
-%\tableentry{Heading}{Content}{spaceafter}
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
-
-%------------------------------------------------
-
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
-
-	%------------------------------------------------
-
-	\tableentry{Robotics }{ dynamic systems evolution,\hspace{0.05cm} quaternions }{}
-	\tableentry{Control }{inverse dynamics,\hspace{0.05cm} robust control }{spaceafter}
-
-	%------------------------------------------------
-
-	\tableentry{Robotic }{ SLAM,\hspace{0.05cm} trajectory planning}{}
-	\tableentry{Navigation }{ obstacle avoidance,\hspace{0.05cm} filtering }{spaceafter}
-
-	%------------------------------------------------
-
-	\tableentry{Machine}{ bioinspired networks,\hspace{0.05cm} CNN }{}
-	\tableentry{Learning}{ spiking neurons,\hspace{0.05cm} LSTM }{spaceafter}
-
-	%------------------------------------------------
-        \tableentry{artificial}{ multiagent systems,\hspace{0.05cm} reinforcement learning}{}
-	\tableentry{intelligence}{ first order logic,\hspace{0.05cm} planning and reasoning}{spaceafter}
-
-        \tableentry{computer}{ operative systems,\hspace{0.05cm} network protocols }{}
-	\tableentry{science}{ algorithms design,\hspace{0.05cm} databases }{spaceafter}
-
-\end{supertabular}
-
-%----------------------------------------------------------------------------------------
-%	REFERENCES
-%----------------------------------------------------------------------------------------
-
 \section{References}
-
-%\textit{References available on request} % Uncomment if you'd rather not include references and remove the section below
-
-% This section is laid out using a table. A \tableentry command adds lines with the following parameters:
-
-%\tableentry{Heading}{Content}{spaceafter}
-% All 3 parameters must be supplied but any can be empty if you don't need them
-% A "spaceafter" value in the third parameter will add some vertical space -- this is to be used between headings, leave it empty for no extra space
-
-\begin{supertabular}{r l} % Start a table with two columns, the table will ensure everything is aligned
-        \tableentry{}{\href{https://members.loria.fr/SIvaldi/}{\textbf{Dr. Serena Ivaldi}}}{}
-	\tableentry{Position}{Research scientist}{}
-	\tableentry{Employer}{\href{https://www.inria.fr/}{INRIA}}{}
-        \tableentry{Email}{serena.ivaldi@inria.fr}{spaceafter}
-        \tableentry{}{\href{https://sites.google.com/dis.uniroma1.it/grisetti/home}{\textbf{Dr. Giorgio Grisetti}}}{}
-	\tableentry{Position}{Professor}{}
-	\tableentry{Employer}{\href{https://www.uniroma1.it/}{La Sapienza, University of Rome}}{}
-        \tableentry{Email}{grisetti@diag.uniroma1.it}{}
-\end{supertabular}
+  \href{https://members.loria.fr/SIvaldi/}{\textbf{Dr. Serena Ivaldi}}\\
+  Research scientist\\
+  \href{https://www.inria.fr/}{\textbf{INRIA}}\\
+  serena.ivaldi@inria.fr\\\\
+  \href{https://sites.google.com/dis.uniroma1.it/grisetti/home}{\textbf{Dr. Giorgio Grisetti}}\\
+  Professor\\
+  \href{https://www.uniroma1.it/}{\textbf{La Sapienza, University of Rome}}\\
+  grisetti@diag.uniroma1.it
 
 \end{paracol} % End two-column mode
 
-\textcolor{headings}{Languages:} \qquad \textbf{Italian:}  native \qquad
-                                \textbf{English:}  IELTS academic cert. Overall band score \textbf{7.0} CEFR level \textbf{C1}\qquad
-                                \textbf{French:} level \textbf{A2}
-\smallskip
+\section{Interests}
+\columnratio{0.5, 0.5} % Widths of the two columns, specified here as a ratio summing to 1 to correspond to percentages; adjust as needed for your content
+\begin{paracol}{2} % Begin two-column mode
+  \begin{itemize}
+    \item The mystery of consciousness
+    \item RUST programming language
+    \item Simulation and reinforcement learning
+    \item Containerisation in Docker
+  \end{itemize}
+\switchcolumn % Switch to the second (right) column
+\begin{itemize}
+    \item NEOVIM as code editor
+    \item Strategy games and video games
+    \item All kind of sports
+    \item Fantasy and sci-fi books
+  \end{itemize}
 
-% \textcolor{headings}{Privacy:}\quad"In compliance with the GDPR and Italian Legislative Decree no. 196 dated 30/06/2003, I hereby authorize the recipient of this document to use and process my personal details for the purpose of recruiting and selecting staff and I confirm to be informed of my rights in accordance to art. 7 of the above mentioned Decree".
-
-\end{document}
+\end{paracol} % End two-column mode
