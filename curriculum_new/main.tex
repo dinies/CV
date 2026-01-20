@@ -1,0 +1,174 @@
+\documentclass[12pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{lmodern} % simple font
+
+\usepackage[extreme]{savetrees} % to use more of the page
+
+\usepackage{xcolor}
+\definecolor{red-milano}{rgb}{0.6,0.04,0}
+
+\usepackage{sectsty} % to change color of sections
+\chapterfont{\color{red-milano}}
+\sectionfont{\color{red-milano}}
+
+\setlength{\parindent}{0pt} % remove indentation after new lines
+
+\pagenumbering{gobble} % no page numbers
+\usepackage[none]{hyphenat} % disable hypenation
+\sloppy % prevent word-breaking
+\raggedright % force left alignment
+\frenchspacing % prevent elimination of spaces after punctuation
+
+\usepackage{enumitem} % keep bullet points ATS friendly
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
+
+\usepackage{microtype}
+\microtypesetup{
+  protrusion=false,
+  expansion=false
+}
+\DisableLigatures{encoding = *, family = *} % disable ligatures
+
+\pdfgentounicode=1 % improve copy pasta behaviour
+
+\usepackage{etoolbox}
+\makeatletter
+\pretocmd\@outputpage{\hspace{0pt}}{}{} % solve last word and first word stitched together
+\makeatother
+
+\pagestyle{empty}
+
+
+\begin{document}
+\begin{center}
+ \textbf{\color{red-milano}\huge{Senior SLAM Engineer}}
+\end{center}
+
+\textbf{Edoardo Ghini} \\
+Bristol, UK | +44 788 3037470 | ghiniedoardo@gmail.com \\
+GitHub: github.com/dinies  | LinkedIn: linkedin.com/in/dinies
+
+\section*{Professional Summary}
+Senior SLAM Engineer with 7+ years of professional experience in C++ robotics software development, specializing in LiDAR-based SLAM, state estimation, and sensor fusion. Strong background in graph optimization, Lie algebra, and multi-sensor systems (GNSS, IMU, INS, wheel odometry). Experienced in modern C++, ROS/ROS2, Docker, and scalable software architectures for production robotics systems and technical leadership.
+
+\section*{Technical Skills}
+\begin{itemize}
+\item
+\textbf{Programming Languages:} C++ (7+ years), Python, Rust
+\item
+\textbf{Robotics \& SLAM:} LiDAR SLAM, Visual SLAM, Graph Optimization, Sensor Fusion
+\item
+\textbf{State Estimation:} Kalman Filters, Factor Graphs, Lie Algebra (SE(3)), Manifolds, Covariance Propagation \& Estimation
+\item
+\textbf{Robotics Frameworks:} ROS, ROS2, DART, Pinocchio, TSID
+\item
+\textbf{Software Engineering:} Architecture, Multithreading, Design Patterns, Docker, CI/CD
+\item
+\textbf{Control \& Planning:} Cartesian \& Joint Control, Dynamic Programming, Trajectory Planning
+\item
+\textbf{Simulation \& Visualization:} ImGui, Gazebo, WebGL, OpenGL
+\end{itemize}
+
+\section*{Work Experience}
+\subsection*{Senior SLAM Engineer \textendash{} Kudan Limited \& Kudan Inc., Bristol, UK \& Tokyo, JP}
+Jun 2024 -- Present (Full Time)
+\begin{itemize}
+\item
+Lead design and implementation of major epics within a SAFe framework with emphasis on software architecture
+\item
+Translate state-of-the-art academic research on IMU filtering into production code, solving the problem of SLAM in tunnels
+\item
+Apply advanced state estimation techniques using SE(3) Lie algebra and covariance analysis
+\item
+Produce technical documentation and support onboarding of new engineers
+\item
+Perform in-depth code reviews and promote modern C++ standards
+\end{itemize}
+
+\subsection*{SLAM Engineer \textendash{} Kudan Limited \& Kudan Inc., Bristol, UK \& Tokyo, JP}
+Jun 2022 -- May 2024 (Full Time)
+\begin{itemize}
+\item
+Develop and maintain a production-grade C++ 3D LiDAR SLAM library
+\item
+Design and implement core SLAM algorithms, including graph optimization and sensor fusion
+\item
+Integrate multi-sensor data (GNSS, IMU, INS, wheel odometry) to improve robustness
+\item
+Develop internal GUI and CLI tools to improve developer productivity
+\item
+Containerize systems using Docker and support scalable deployment
+\item
+Produce detailed analysis of the failure points of the system and propose algorithmic solutions.
+\end{itemize}
+
+\subsection*{ Robotics Software Engineer \textendash{} INRIA, National Institute for Research in Digital Science and Technology}
+Oct 2020 -- Apr 2022 (Full Time)
+\begin{itemize}
+
+\item
+Design and develop the entire software layer from scratch for a teleoperation system of an industrial robot in hazardous environments
+\item
+Implement each pipeline module in C++, containerize it with Docker, and integrate it using ROS
+\item
+Model real robot dynamics using simulation libraries to achieve precise control
+\item
+Set-up an URDF-based digital twin of the robot in the environment to use as simulation module
+\item
+Write a controller to move the robot in both Cartesian and joint space
+\item
+Create a teleoperation GUI which allows to interface both with the simulation and with the real robot
+\item
+Gain hands-on experience with control laws on humanoid robots used in the lab through dynamic programming
+\item
+Contribute to the publication of the paper: "Teleoperating a robot for removing asbestos tiles on roofs: insights from a pilot study" published at IEEE ARSO 2023 (Berlin)
+\end{itemize}
+
+
+\subsection*{Back-end software engineer \textendash{} Translated}
+Mar 2016 -- Jul 2016 (Full Time)
+
+\begin{itemize}
+\item
+Maintain and improve the codebase of a web application in PHP
+\item
+Add unit tests increasing the code coverage of the core application logic of 200\%
+\end{itemize}
+
+\section*{Education}
+\subsection*{MScEng \textendash{} Master’s in Artificial Intelligence and Robotics \textendash{} La Sapienza, University of Rome}
+2016 -- 2019
+\begin{itemize}
+\item
+Strong focus on SLAM and autonomous navigation
+\item
+Applied theoretical concepts in hands-on projects from kinematics, dynamics, navigation, filtering, AI, and controls.
+\item
+Develop a 3D LiDAR SLAM system in C++ as thesis : "Position tracking using high order primitives"
+\end{itemize}
+
+\subsection*{Bachelor of Science \textendash{} Computer Engineering \textendash{} Roma Tre University}
+2013 -- 2016\\
+Write a thesis about increasing the code coverage of a web application: "Unit testing avoiding regression in CI"
+
+\section*{Projects}
+\begin{itemize}
+\item
+\textbf{Spiking convolutional neural network for image classification} \textendash{} custom Tensorflow layer
+
+\item
+\textbf{Chess endgames engine on simpler chessboard} \textendash{} Reinforcement Learning, Markovian process
+
+\item
+\textbf{Maximise field of view coverage of multiple surveillance cameras} \textendash{} multi agent, C++
+
+\item
+\textbf{Hex game} \textendash{} Rust, simulation, CI/CD with GitHub actions
+
+\item
+\textbf{Conway's Game of Life} \textendash{} Rust, simulation, visualisation
+\end{itemize}
+
+\end{document}
