@@ -1,0 +1,63 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{xcolor}
+\definecolor{red-milano}{rgb}{0.6,0.04,0}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, % Whether to color the text of links
+	urlcolor=red-milano, % Color for \url and \href links
+	linkcolor=red-milano, % Color for \nameref links
+}
+\usepackage{lmodern} % simple font
+
+\usepackage[margin=0.5cm]{geometry} % Sets all margins
+
+
+\usepackage{sectsty} % to change color of sections
+\chapterfont{\color{red-milano}}
+\sectionfont{\color{red-milano}}
+
+\setlength{\parindent}{0pt} % remove indentation after new lines
+
+\pagenumbering{gobble} % no page numbers
+\usepackage[none]{hyphenat} % disable hypenation
+\sloppy % prevent word-breaking
+\raggedright % force left alignment
+\frenchspacing % prevent elimination of spaces after punctuation
+
+\usepackage{enumitem} % keep bullet points ATS friendly
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
+
+\usepackage{microtype}
+\microtypesetup{
+  protrusion=false,
+  expansion=false
+}
+\DisableLigatures{encoding = *, family = *} % disable ligatures
+
+\pdfgentounicode=1 % improve copy pasta behaviour
+
+\usepackage{etoolbox}
+\makeatletter
+\pretocmd\@outputpage{\hspace{0pt}}{}{} % solve last word and first word stitched together
+\makeatother
+
+\pagestyle{empty}
+
+
+\begin{document}
+My name is Edoardo Ghini.
+I work in Bristol as a software engineer.
+Specialised in SLAM, C++, autonomous navigation, software architecture, and computer vision.
+I am facing redundancy at the moment.
+I would be keen to find a new job in the UK (based in Bristol) that would sponsor me for a Skilled Worker visa.
+Do you think that any of the roles, opportunities, or companies that you’re managing could be a good fit for me?
+I will attach my CV.
+I appreciate your consideration,
+Have a great day,
+Edoardo
+\end{document}
+

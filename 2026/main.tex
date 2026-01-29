@@ -1,45 +1,4 @@
-\documentclass[12pt]{article}
-\usepackage[T1]{fontenc}
-\usepackage[utf8]{inputenc}
-
-\usepackage{lmodern} % simple font
-
-\usepackage[margin=0.5cm]{geometry} % Sets all margins
-
-\usepackage{xcolor}
-\definecolor{red-milano}{rgb}{0.6,0.04,0}
-
-\usepackage{sectsty} % to change color of sections
-\chapterfont{\color{red-milano}}
-\sectionfont{\color{red-milano}}
-
-\setlength{\parindent}{0pt} % remove indentation after new lines
-
-\pagenumbering{gobble} % no page numbers
-\usepackage[none]{hyphenat} % disable hypenation
-\sloppy % prevent word-breaking
-\raggedright % force left alignment
-\frenchspacing % prevent elimination of spaces after punctuation
-
-\usepackage{enumitem} % keep bullet points ATS friendly
-\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
-
-\usepackage{microtype}
-\microtypesetup{
-  protrusion=false,
-  expansion=false
-}
-\DisableLigatures{encoding = *, family = *} % disable ligatures
-
-\pdfgentounicode=1 % improve copy pasta behaviour
-
-\usepackage{etoolbox}
-\makeatletter
-\pretocmd\@outputpage{\hspace{0pt}}{}{} % solve last word and first word stitched together
-\makeatother
-
-\pagestyle{empty}
-
+\input{../preamble.tex}
 
 \begin{document}
 \begin{center}

@@ -2,13 +2,15 @@
 
 TARGET=main
 SOURCE=$(TARGET).tex
+FILE_NAME=job_resources_2026.pdf
+OUTPUT_FOLDER=~/exchange/
 
 latex:
 	pdflatex $(SOURCE)
 
 latexcp:
 	pdflatex $(SOURCE)
-	cp $(TARGET).pdf ~/exchange/CV_Edoardo_Ghini.pdf
+	cp $(TARGET).pdf $(OUTPUT_FOLDER)$(FILE_NAME)
 
 view:
 	xdg-open $(TARGET).pdf &

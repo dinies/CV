@@ -1,0 +1,80 @@
+\documentclass[11pt]{article}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{xcolor}
+\definecolor{red-milano}{rgb}{0.6,0.04,0}
+
+\usepackage{hyperref}
+\hypersetup{
+	colorlinks=true, % Whether to color the text of links
+	urlcolor=red-milano, % Color for \url and \href links
+	linkcolor=red-milano, % Color for \nameref links
+}
+\usepackage{lmodern} % simple font
+
+\usepackage[margin=0.5cm]{geometry} % Sets all margins
+
+
+\usepackage{sectsty} % to change color of sections
+\chapterfont{\color{red-milano}}
+\sectionfont{\color{red-milano}}
+
+\setlength{\parindent}{0pt} % remove indentation after new lines
+
+\pagenumbering{gobble} % no page numbers
+\usepackage[none]{hyphenat} % disable hypenation
+\sloppy % prevent word-breaking
+\raggedright % force left alignment
+\frenchspacing % prevent elimination of spaces after punctuation
+
+\usepackage{enumitem} % keep bullet points ATS friendly
+\setlist[itemize]{leftmargin=*, noitemsep, topsep=0pt}
+
+\usepackage{microtype}
+\microtypesetup{
+  protrusion=false,
+  expansion=false
+}
+\DisableLigatures{encoding = *, family = *} % disable ligatures
+
+\pdfgentounicode=1 % improve copy pasta behaviour
+
+\usepackage{etoolbox}
+\makeatletter
+\pretocmd\@outputpage{\hspace{0pt}}{}{} % solve last word and first word stitched together
+\makeatother
+
+\pagestyle{empty}
+
+
+\begin{document}
+Dear Madam or Sir,
+\medskip
+
+I am a Senior Software Engineer with 5+ years of experience, based in Bristol.
+I am applying to the Senior Software Engineer role since the job description and the company mission resonated with my professional experience and values:
+\begin{itemize}
+\item
+I believe in clean software architectural design.
+\item
+I have been following object oriented design principles throughout my career.
+\item
+I understand the value that Test Driven Development brings to the table: unparalleled bug prevention translating in better code safety.
+\item
+Passionate about containerisation with Docker.
+\item
+Worked in codebases where Jenkins was used for CI/CD pipelines.
+\end{itemize}
+\medskip
+
+I have had exposure to Java at the beginning of my career and after that I worked with C++ and python.
+The statement of Lloyds Banking Group excites me together with the company culture: "finance as force for good".
+\bigskip
+
+Yours faithfully,
+\medskip
+
+Edoardo
+
+\end{document}
